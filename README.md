@@ -21,3 +21,19 @@ A repo of all the LeetCode questions I've done and the various ways that I've so
     1. Try to finish these within 45 minutes
 5. Do a mock interview AT LEAST once a week
 6. Towards the last month of interview prep, do the 1-month term plan in EPI on PAPER
+
+## Organization
+All problem solutions are held in the problems directory. That directory is divided up into sub directories for each topic and
+within those directories the problems are named with their problem number (ex. problem 99 => 99.py)
+
+## Structure Graphic
+
+. leet-code-questions
++-- README
++-- environmental-stuff
++-- problems
+|   +-- topic 1
+|       +-- problem 1
+|   +-- topic 2
+|       +-- problem 2
+|        ...
