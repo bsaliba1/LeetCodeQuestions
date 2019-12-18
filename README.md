@@ -33,9 +33,10 @@ within those directories the problems are named with their problem number (ex. p
 +-- README
 +-- environmental-stuff
 +-- problems
-|   +-- topic 1
-|       +-- problem 1
-|   +-- topic 2
-|       +-- problem 2
+|   +-- topic_1
+|       +-- 1.py
+|   +-- topic_2
+|       +-- 2.py
+|       +-- 3.py
 |        ...
 ```
