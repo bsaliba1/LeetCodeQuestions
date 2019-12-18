@@ -28,6 +28,7 @@ within those directories the problems are named with their problem number (ex. p
 
 ## Structure Graphic
 
+```
 . leet-code-questions
 +-- README
 +-- environmental-stuff
@@ -37,3 +38,4 @@ within those directories the problems are named with their problem number (ex. p
 |   +-- topic 2
 |       +-- problem 2
 |        ...
+```
