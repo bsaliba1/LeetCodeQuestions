@@ -6,3 +6,10 @@
 #
 # Both of you are very clever and have optimal strategies for the game.
 # Write a function to determine whether you can win the game given the number of stones in the heap.
+
+class Solution:
+    def canWinNim(self, n: int) -> bool:
+        return False if n % 4 == 0 else True
+
+sol = Solution()
+print(sol.canWinNim(9))
