@@ -1,5 +1,5 @@
 # LeetCodeQuestions
-A repo of all the LeetCode questions I've done and the various ways that I've solved them.
+A repo of all my solutions to leetcode questions and my notes on how I solved them.
 
 ## Game Plan
 
@@ -23,16 +23,26 @@ A repo of all the LeetCode questions I've done and the various ways that I've so
 6. Towards the last month of interview prep, do the 1-month term plan in EPI on PAPER
 
 ## Organization
-All problem solutions are held in the problems directory. That directory is divided up into sub directories for each topic and
-within those directories the problems are named with their problem number (ex. problem 99 => 99.py)
+    
+### Problems
+This is the directory contains subdirectories for all of the algorithm topics on leetcode. Within the subdirectories the problems are named according to their number on leetcode (ex. problem 99 => 99.py)
+
+### Notes
+This directory is my personal little space for keeping notes on important things I learned.
+- python_tips.md - Contains my notes on basic python syntax and functions as they are used for each topic
+- review_topics - Lists all of the algorithm topics and subtopics that I need to review
+
+
 
 ## Structure Graphic
 
 ```
 . leet-code-questions
 +-- README
-+-- environmental-stuff
-+-- problems
++-- venv
++-- Notes
+|   +-- python_tips.md
++-- Problems
 |   +-- topic_1
 |       +-- 1.py
 |   +-- topic_2
