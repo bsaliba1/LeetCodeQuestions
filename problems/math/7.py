@@ -2,16 +2,20 @@
 # Link: https://leetcode.com/problems/reverse-integer/
 # Given a 32-bit signed integer, reverse digits of an integer.
 
+MIN_INT = -(2**31)
+MAX_INT = (2**31)-1
 
 class Solution:
     # Using String Slicing
     # Syntax: mystring[b_index:l_index:step]
     # If step < 0 then it reverses the slice
+
     @staticmethod
     def reverseInteger(x: int) -> int:
-        s = len(str(x))
-        result = int(str(x)[::-1]) if x >= 0 else -int(str(x)[s:0:-1])
-        return result if result>-(2**31) and result<((2**31)-1) else 0
+        size = len(str(x))
+        rev_string = str(x)[::-1] if x >= 0 else '-'+str(x)[size:0:-1]
+        rev_int = int(rev_string)
+        return rev_int if MIN_INT < rev_int < MAX_INT else 0
 
     @staticmethod
     def reverseIntegerPP(x: int) -> int:
