@@ -1,5 +1,6 @@
 # 100. Same Tree
 # Link: https://leetcode.com/problems/same-tree/
+# Link to Explanation: https://leetcode.com/problems/same-tree/discuss/457825/Python3-Solution-(PreOrder)-w-Explanation
 
 
 class TreeNode:
@@ -12,18 +13,6 @@ class TreeNode:
 class Solution:
     @staticmethod
     def isSameTree(x: TreeNode, y: TreeNode) -> bool:
-        if x is not None and y is None:
-            return False
-        if y is not None and x is None:
-            return False
-        if x is None and y is None:
-            return True
-        if x.val != y.val:
-            return False
-
-        if Solution().isSameTree(x.left, y.left) and Solution().isSameTree(x.right, y.right):
-            return True
-        else:
-            return False
-
-        return True
+        if x and y:
+            return x.val == y.val and Solution().isSameTree(x.left, y.left) and Solution().isSameTree(x.right, y.right)
+        return x == y
