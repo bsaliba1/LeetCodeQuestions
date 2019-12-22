@@ -1,6 +1,6 @@
 # 206. Reverse Linked List
+# Link: https://leetcode.com/problems/reverse-linked-list/
 # Task: Reverse a singly linked list.
-# Definition for singly-linked list.
 
 
 class ListNode:
