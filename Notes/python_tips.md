@@ -85,3 +85,10 @@
             # now recur on right subtree
             printPreorder(node->right);
         ```
+- Equivalent Trees
+`````
+    def checkSubTree(first: TreeNode, second: TreeNode):
+        if first and second:
+            return first.val == second.val and Solution().checkSubTree(first.left, second.right) and Solution().checkSubTree(first.right, second.left)
+        return first == second
+`````
