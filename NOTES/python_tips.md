@@ -1,9 +1,13 @@
 ## Basics
-- Print on same line: `print("...", end = '')` will prevent a \n character to be added to the end of your string
-- Static Functions: `@staticmethod` can be used to declare the following function as static
-- Function Declaration: `def func_name(var_name = default_val: var_type) -> output_type: ...`
-- Class Declaration: `class ClassName: `
-- Ternary Operator: `condition_if_true if condition else condition_if_false`
+- Printing:
+    - Print on same line: `print("...", end = '')` will prevent a \n character to be added to the end of your string
+- Declarations:
+    - Static Functions: `@staticmethod` can be used to declare the following function as static
+    - Functions: `def func_name(var_name = default_val: var_type) -> output_type: ...`
+    - Classes `class ClassName: `
+- Operators:
+    - Ternary: `condition_if_true if condition else condition_if_false`
+    - Exponent: `2**3 == pow(2,3)`
 - Conversion:
     - string -> int: `int(mystring)`
     - int -> string: `str(myint)`
