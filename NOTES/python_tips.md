@@ -1,3 +1,5 @@
+# Python Notes
+
 ## Basics
 - Printing:
     - Print on same line: `print("...", end = '')` will prevent a \n character to be added to the end of your string
