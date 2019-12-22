@@ -1,16 +1,17 @@
-# Nim Game
-#
+# 292. Nim Game
+# Link: https://leetcode.com/problems/nim-game/
+
+# --- Problem ---
 # You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time
 # one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner.
 # You will take the first turn to remove the stones.
-#
 # Both of you are very clever and have optimal strategies for the game.
 # Write a function to determine whether you can win the game given the number of stones in the heap.
 
-
 # --- Solution ---
 # You can't win the game unless you have rocks numbering a multiple of 4.
-#
+
+
 # --- Explanation ---
 # If you have 1,2,3 -> rocks you always win.
 # If you have 4 rocks you always lose (you take 1,2 or 3 rocks then your opponent takes the remainder)

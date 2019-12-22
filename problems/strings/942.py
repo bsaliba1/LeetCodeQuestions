@@ -1,3 +1,6 @@
+# 942. DI String Match
+# Link: https://leetcode.com/problems/di-string-match/
+
 from typing import List
 
 
