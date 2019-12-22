@@ -1,5 +1,5 @@
 ## Basics
-- Print on same line: `print("...", end = '')`` will prevent a \n character to be added to the end of your string
+- Print on same line: `print("...", end = '')` will prevent a \n character to be added to the end of your string
 - Static Functions: `@staticmethod` can be used to declare the following function as static
 - Function Declaration: `def func_name(var_name = default_val: var_type) -> output_type: ...`
 - Class Declaration: `class ClassName: `
