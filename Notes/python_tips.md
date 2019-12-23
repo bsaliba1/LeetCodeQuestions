@@ -30,6 +30,7 @@
 - Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
 - Max Int: `float("inf")`
 - Min Int: `-float("inf")`
+- Get sign of int: `[-1,1][x<0]`
 
 ### Strings
 - Indexing:
