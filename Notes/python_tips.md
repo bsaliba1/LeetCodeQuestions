@@ -92,9 +92,21 @@
             printPreorder(node->right);
         ```
 - Equivalent Trees
-`````
+```
     def checkSubTree(first: TreeNode, second: TreeNode):
         if first and second:
             return first.val == second.val and Solution().checkSubTree(first.left, second.right) and Solution().checkSubTree(first.right, second.left)
         return first == second
-`````
+```
+- Binary Search
+```
+# Returns index of target
+def binarySearch(nums: List[int], target: int) -> int:
+    return binarySearchHelper(nums, target, 0, len(nums)-1)
+
+def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
+    mid = begin+end//2
+    if nums[mid] < target: return binarySearchHelper(nums,target, mid+1, end)
+    if nums[mid] > target: return binarySearchHelper(nums,target, 0, mid)
+    return mid
+```
