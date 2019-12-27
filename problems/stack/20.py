@@ -1,3 +1,6 @@
+# 20. Valid Parentheses
+# Link: https://leetcode.com/problems/valid-parentheses/
+
 import sys
 
 
@@ -15,6 +18,11 @@ class Solution:
                 else:
                     return False
         return True if len(stack) == 0 else False
+
+    def isValidConstMem(self, s):
+        while '[]' in s or '()' in s or '{}' in s:
+            s = s.replace('[]','').replace('()','').replace('{}','')
+        return not len(s)
 
 
 print(Solution().isValid(sys.argv[1]))
