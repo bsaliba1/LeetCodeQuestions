@@ -16,14 +16,22 @@
 
 ## Topics
 
-### Arrays
+### Data Structures
 - HashMap: `dict()` is used liked a hashmap
     - use `in` keyword to check if key is contained in dict
-- Initializing Array:
+- Array:
     - Empty: `arr = []`
     - Initialize w/ values: `arr = [1, 2, 3]`
     - Initialize all zeroes: `arr = [0] * N # out = [0,0,0, ...]`
     - Initialize w/ pattern: `arr = [1,2,3] * N # out = [1,2,3,1,2,3,...]`
+- Stack:
+    - Use list as stack
+    ```
+    stack = [1,2,3]
+    stack.pop() # pop
+    stack[-1] # peak
+    len(stack)==0 # empty
+    ```
 
 ### Math
 - Truncating: `//` operator is used for truncating divide
