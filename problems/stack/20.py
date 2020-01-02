@@ -17,7 +17,8 @@ class Solution:
                     stack.pop()
                 else:
                     return False
-        return True if len(stack) == 0 else False
+        return True if le
+        n(stack) == 0 else False
 
     def isValidConstMem(self, s):
         while '[]' in s or '()' in s or '{}' in s:
