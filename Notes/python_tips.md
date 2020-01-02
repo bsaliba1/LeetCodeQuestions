@@ -13,6 +13,12 @@
 - Conversion:
     - string -> int: `int(mystring)`
     - int -> string: `str(myint)`
+- Command Line Args
+    ```
+    import sys
+
+    print(sys.argv[1])
+    ```
 
 ## Topics
 
@@ -39,6 +45,7 @@
 - Max Int: `float("inf")`
 - Min Int: `-float("inf")`
 - Get sign of int: `[-1,1][x<0]`
+- XOR: `x = 0`, `x^= 1`. Note that XOR-ing a number `x` by the same number twice leaves you with `x`
 
 ### Strings
 - Indexing:
