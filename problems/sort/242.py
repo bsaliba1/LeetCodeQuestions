@@ -23,8 +23,5 @@ class Solution:
         return all(x == 0 for x in char_map.values())
 
 
-
-
-
 print(Solution().isAnagram("abbc", "cbba"))
 print(Solution().isAnagramSimple("abbc", "cbba"))
