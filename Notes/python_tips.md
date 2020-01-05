@@ -30,6 +30,7 @@
     - Initialize w/ values: `arr = [1, 2, 3]`
     - Initialize all zeroes: `arr = [0] * N # out = [0,0,0, ...]`
     - Initialize w/ pattern: `arr = [1,2,3] * N # out = [1,2,3,1,2,3,...]`
+    - Check all values in array: all(x == 0 for x in arr)
 - Stack:
     - Use list as stack
     ```
