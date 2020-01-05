@@ -1,6 +1,7 @@
 # 136. Single Number
 # Link: https://leetcode.com/problems/single-number/
 from typing import List
+from functools import reduce
 
 
 class Solution:
@@ -23,8 +24,10 @@ class Solution:
 
         return sol
 
+    def singleNumOL(self, nums: List[int]) -> int:
+        return reduce(lambda acc, i: acc^i, nums)
 
-print(Solution().singleNum([2, 2, 1]))
+print(Solution().singleNumOL([2, 2, 1]))
 
 
 
