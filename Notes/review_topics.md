@@ -3,6 +3,7 @@
 2. Trees
 3. Binary Search
 4. Greedy
+5. Heaps
 
 ...TBD
 

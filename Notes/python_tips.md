@@ -126,3 +126,28 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
     if nums[mid] > target: return binarySearchHelper(nums,target, 0, mid)
     return mid
 ```
+- Heaps
+    - def: `heap[k] <= heap[2k+1] and heap[k] <= heap[2k+2]`
+    - minHeap vs maxHeap
+    - Basic Use:
+    ```
+    import heapq
+    heap = [2,1,4]
+    heapq.heapify(heap) // [1,2,4]
+    heapq.heappush(heap, 3) // [1,2,4,3]
+    ```
+    - Heapsort:
+    ```
+    >>> def heapsort(iterable):
+    ...     h = []
+    ...     for value in iterable:
+    ...         heappush(h, value)
+    ...     return [heappop(h) for i in range(len(h))]
+    ...
+    >>> heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    ```
+
+
+
+
