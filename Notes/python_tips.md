@@ -20,6 +20,20 @@
     print(sys.argv[1])
     ```
 - Initializing Multiple Vals: `a,b = [1,2]` // a = 1 and b = 2
+- Conversions:
+    - Use data type names
+    ```
+    >> str(343)
+    '343'
+    >> float(343)
+    343.0
+    >> ...
+    ```
+    - Get ascii rep of char:
+    ```
+    >> ord('a')
+    97
+    ```
 
 ## Topics
 
