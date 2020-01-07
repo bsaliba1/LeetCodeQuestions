@@ -4,6 +4,8 @@
 3. Binary Search
 4. Greedy
 5. Heaps
+6. Sets
+7. Deque
 
 ...TBD
 
