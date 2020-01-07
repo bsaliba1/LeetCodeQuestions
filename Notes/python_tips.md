@@ -27,6 +27,10 @@
     '343'
     >> float(343)
     343.0
+    >> bin(3)
+    '0b11'
+    >> bin(7)
+    '0b111'
     >> ...
     ```
     - Get ascii rep of char:
@@ -34,6 +38,8 @@
     >> ord('a')
     97
     ```
+- Assertions:
+    - basic syntax: `assert test, control`
 
 ## Topics
 
@@ -78,6 +84,8 @@
         - `mystring[::] == mystring[0:len(mystring)-1]`
         - `mystring[::-1]` reverses string
     - ex. `"abcdefg"[:0:-2]` outputs "gec"
+- Count number of instances of char:
+    - ``"aaa".count('a') // output: 3`
 
 ### Trees
 - Traversal
