@@ -1,3 +1,6 @@
+# 49. Group Anagrams
+# Link: https://leetcode.com/problems/group-anagrams/
+
 from typing import List
 
 
@@ -6,9 +9,9 @@ class Solution:
         word_map = dict()
         for word in strs:
             # List number of times each letter occurs in this word
-            num_letters = [0]*26
+            num_letters = [0] * 26
             for c in word:
-                num_letters[ord(c)-97]+=1 # ord gets ascii value of char
+                num_letters[ord(c) - ord('a')] += 1  # ord gets ascii value of char
 
             num_letters = tuple(num_letters)
             # If word_map doesn't have list for that anagram make one
