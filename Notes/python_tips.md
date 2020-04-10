@@ -110,7 +110,7 @@
         - `mystring[::-1]` reverses string
     - ex. `"abcdefg"[:0:-2]` outputs "gec"
 - Count number of instances of char:
-    - ``"aaa".count('a') // output: 3`
+    - `"aaa".count('a') // output: 3`
 
 ### Trees
 - Traversal
