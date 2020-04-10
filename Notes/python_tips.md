@@ -72,7 +72,7 @@
 - Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
 - Max Int: `float("inf")`
 - Min Int: `-float("inf")`
-- Get sign of int: `[-1,1][x<0]`
+- Get sign of int: `[-1,1][x<0]` ** ESSENTIALLY IF ELSE STATEMENT
 - XOR: `x = 0`, `x^= 1`. Note that XOR-ing a number `x` by the same number twice leaves you with `x`
 
 ### Strings
@@ -156,7 +156,7 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
     return mid
 ```
 - Heaps
-    - def: `heap[k] <= heap[2k+1] and heap[k] <= heap[2k+2]`
+    - def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]`
     - minHeap vs maxHeap
     - Basic Use:
     ```
