@@ -11,8 +11,8 @@
 - Ternary: `condition_if_true if condition else condition_if_false`
 - Exponent: `2**3 == pow(2,3)`
 ### Conversion:
-- string -> int: `int(mystring)``
-- int -> string: `str(myint)``
+- string -> int: `int(mystring)`
+- int -> string: `str(myint)`
 ### Command Line Args
 ```
 import sys
