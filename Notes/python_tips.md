@@ -1,3 +1,47 @@
+# Python Notes
+
+## Basics
+- Printing:
+    - Print on same line: print("...", end = '') will prevent a \n character to be added to the end of your string
+- Declarations:
+    - Static Functions: @staticmethod can be used to declare the following function as static
+    - Functions: def func_name(var_name = default_val: var_type) -> output_type: ...
+    - Classes class ClassName:
+- Operators:
+    - Ternary: condition_if_true if condition else condition_if_false
+    - Exponent: 2**3 == pow(2,3)
+- Conversion:
+    - string -> int: int(mystring)
+    - int -> string: str(myint)
+- Command Line Args
+
+    import sys
+
+    print(sys.argv[1])
+
+- Initializing Multiple Vals: a,b = [1,2] // a = 1 and b = 2
+- Conversions:
+    - Use data type names
+
+    >> str(343)
+    '343'
+    >> float(343)
+    343.0
+    >> bin(3)
+    '0b11'
+    >> bin(7)
+    '0b111'
+    >> ...
+
+    - Get ascii rep of char:
+
+    >> ord('a')
+    97
+
+- Assertions:
+    - basic syntax: assert test, control
+
+## Topics
 ### Math
 - Truncating: `//` operator is used for truncating divide
 - Reverse Int: Reverse an int with a loop to `% 10` and `/10` (see problem 7)
@@ -20,11 +64,11 @@
 
 ### Data Structures
 
-### HashMap:
+#### HashMap:
 - `dict()` is used liked a hashmap
 - use `in` keyword to check if key is contained in dict
 
-### Array:
+#### Array:
 - Empty: `arr = []`
 - Initialize w/ values: `arr = [1, 2, 3]`
 - Initialize all zeroes: `arr = [0] * N # out = [0,0,0, ...]`
@@ -141,7 +185,7 @@
     ```
 
 #### Heaps
-- def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]
+- def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]`
 - minHeap vs maxHeap
 - Basic Use:
     ```
