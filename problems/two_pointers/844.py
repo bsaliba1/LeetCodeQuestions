@@ -7,32 +7,21 @@ class Solution:
 
         def step(s, i):
             count = 0
-            while True:
-                i += 1
-                if i >= len(s):
-                    return i
-                if s[i] is '#':
-                    count += 1
-                else:
-                    count -= 1
+            i += 1
+            while i < len(s):
+                count += [-1, 1][s[i] is '#']
                 if count < 0:
                     break
+                i += 1
             return i
 
         revS = S[::-1]
         revT = T[::-1]
-        iS = iT = 0
+        iterS = step(revS, -1)
+        iterT = step(revT, -1)
 
-        if revS[iS] == "#":
-            iS = step(revS, -1)
-            if revT[iT] == "#":
-                iT = step(revT, -1)
-            if iS >= len(revS) and iT >= len(revT):
-                return True
+        while iterS < len(revS) and iterT < len(revT) and revS[iterS] == revT[iterT]:
+            iterS = step(revS, iterS)
+            iterT = step(revT, iterT)
+        return iterS >= len(revS) and iterT >= len(revT)
 
-        while iS < len(revS) and iT < len(revT) and revS[iS] == revT[iT]:
-            iS = step(revS, iS)
-            iT = step(revT, iT)
-            if iS >= len(revS) and iT >= len(revT):
-                return True
-        return False
