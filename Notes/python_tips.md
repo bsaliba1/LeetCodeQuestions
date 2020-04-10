@@ -65,6 +65,7 @@
     - `"aaa".count('a') // output: 3`
 
 ### Data Structures
+
 #### HashMap: `dict()` is used liked a hashmap
     - use `in` keyword to check if key is contained in dict
 #### Array:
@@ -78,6 +79,7 @@
     names = ['Bob', 'Sandy']
     nums = [1,2]
     mapped = set(zip(names, nums)) //{('Sandy', 2), ('Bob', 1)}
+    ```
 
 #### Stack:
     - Use list as stack
