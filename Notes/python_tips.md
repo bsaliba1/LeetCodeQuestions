@@ -43,10 +43,31 @@
 
 ## Topics
 
+
+### Math
+- Truncating: `//` operator is used for truncating divide
+- Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
+- Max Int: `float("inf")`
+- Min Int: `-float("inf")`
+- Get sign of int: `[-1,1][x<0]` ** ESSENTIALLY IF ELSE STATEMENT
+- XOR: `x = 0`, `x^= 1`. Note that XOR-ing a number `x` by the same number twice leaves you with `x`
+
+### Strings
+- Indexing:
+    - `mystring[0]` will give you the first letter
+    - `mystring[-1]` will give you the last element
+- Slicing: (see example 7)
+    - syntax - `mystring[first:last:step]` , note if step < 0 then step backwards
+        - `mystring[::] == mystring[0:len(mystring)-1]`
+        - `mystring[::-1]` reverses string
+    - ex. `"abcdefg"[:0:-2]` outputs "gec"
+- Count number of instances of char:
+    - `"aaa".count('a') // output: 3`
+
 ### Data Structures
-- HashMap: `dict()` is used liked a hashmap
+#### HashMap: `dict()` is used liked a hashmap
     - use `in` keyword to check if key is contained in dict
-- Array:
+#### Array:
     - Empty: `arr = []`
     - Initialize w/ values: `arr = [1, 2, 3]`
     - Initialize all zeroes: `arr = [0] * N # out = [0,0,0, ...]`
@@ -58,7 +79,7 @@
     nums = [1,2]
     mapped = set(zip(names, nums)) //{('Sandy', 2), ('Bob', 1)}
 
-- Stack:
+#### Stack:
     - Use list as stack
     ```
     stack = [1,2,3]
@@ -92,27 +113,8 @@
         else:
             return None
     ```
-### Math
-- Truncating: `//` operator is used for truncating divide
-- Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
-- Max Int: `float("inf")`
-- Min Int: `-float("inf")`
-- Get sign of int: `[-1,1][x<0]` ** ESSENTIALLY IF ELSE STATEMENT
-- XOR: `x = 0`, `x^= 1`. Note that XOR-ing a number `x` by the same number twice leaves you with `x`
 
-### Strings
-- Indexing:
-    - `mystring[0]` will give you the first letter
-    - `mystring[-1]` will give you the last element
-- Slicing: (see example 7)
-    - syntax - `mystring[first:last:step]` , note if step < 0 then step backwards
-        - `mystring[::] == mystring[0:len(mystring)-1]`
-        - `mystring[::-1]` reverses string
-    - ex. `"abcdefg"[:0:-2]` outputs "gec"
-- Count number of instances of char:
-    - `"aaa".count('a') // output: 3`
-
-### Trees
+#### Trees
 - Traversal
     - Post Order:
         ```
@@ -180,7 +182,7 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
     if nums[mid] > target: return binarySearchHelper(nums,target, 0, mid)
     return mid
 ```
-- Heaps
+#### Heaps
     - def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]`
     - minHeap vs maxHeap
     - Basic Use:
