@@ -1,28 +1,27 @@
 # Python Notes
 
 ## Basics
-- Printing:
-    - Print on same line: print("...", end = '') will prevent a \n character to be added to the end of your string
-- Declarations:
-    - Static Functions: @staticmethod can be used to declare the following function as static
-    - Functions: def func_name(var_name = default_val: var_type) -> output_type: ...
-    - Classes class ClassName:
-- Operators:
-    - Ternary: condition_if_true if condition else condition_if_false
-    - Exponent: 2**3 == pow(2,3)
-- Conversion:
-    - string -> int: int(mystring)
-    - int -> string: str(myint)
-- Command Line Args
-
+### Printing:
+    - Print on same line: `print("...", end = '')`` will prevent a `\n` character to be added to the end of your string
+### Declarations:
+    - Static Functions: `@staticmethod` can be used to declare the following function as static
+    - Functions: `def func_name(var_name = default_val: var_type) -> output_type: ...`
+    - Classes: `class ClassName:`
+### Operators:
+    - Ternary: `condition_if_true if condition else condition_if_false`
+    - Exponent: `2**3 == pow(2,3)`
+### Conversion:
+    - string -> int: `int(mystring)``
+    - int -> string: `str(myint)``
+### Command Line Args
+    ```
     import sys
-
     print(sys.argv[1])
-
-- Initializing Multiple Vals: a,b = [1,2] // a = 1 and b = 2
-- Conversions:
+    ```
+### Initializing Multiple Vals: `a,b = [1,2] # a = 1 and b = 2`
+### Conversions:
     - Use data type names
-
+    ```
     >> str(343)
     '343'
     >> float(343)
@@ -32,13 +31,15 @@
     >> bin(7)
     '0b111'
     >> ...
+    ```
 
     - Get ascii rep of char:
-
+    ```
     >> ord('a')
     97
+    ```
 
-- Assertions:
+### Assertions:
     - basic syntax: assert test, control
 
 ## Topics
