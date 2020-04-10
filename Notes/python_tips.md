@@ -2,24 +2,24 @@
 
 ## Basics
 - Printing:
-    - Print on same line: `print("...", end = '')` will prevent a \n character to be added to the end of your string
+    - Print on same line: print("...", end = '') will prevent a \n character to be added to the end of your string
 - Declarations:
-    - Static Functions: `@staticmethod` can be used to declare the following function as static
-    - Functions: `def func_name(var_name = default_val: var_type) -> output_type: ...`
-    - Classes `class ClassName: `
+    - Static Functions: @staticmethod can be used to declare the following function as static
+    - Functions: def func_name(var_name = default_val: var_type) -> output_type: ...
+    - Classes class ClassName: 
 - Operators:
-    - Ternary: `condition_if_true if condition else condition_if_false`
-    - Exponent: `2**3 == pow(2,3)`
+    - Ternary: condition_if_true if condition else condition_if_false
+    - Exponent: 2**3 == pow(2,3)
 - Conversion:
-    - string -> int: `int(mystring)`
-    - int -> string: `str(myint)`
+    - string -> int: int(mystring)
+    - int -> string: str(myint)
 - Command Line Args
     
     import sys
 
     print(sys.argv[1])
     
-- Initializing Multiple Vals: `a,b = [1,2]` // a = 1 and b = 2
+- Initializing Multiple Vals: a,b = [1,2] // a = 1 and b = 2
 - Conversions:
     - Use data type names
     
@@ -39,41 +39,41 @@
     97
     
 - Assertions:
-    - basic syntax: `assert test, control`
+    - basic syntax: assert test, control
 
 ## Topics
 
 ### Math
-- Truncating: `//` operator is used for truncating divide
+- Truncating: // operator is used for truncating divide
 - Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
-- Max Int: `float("inf")`
-- Min Int: `-float("inf")`
-- Get sign of int: `[-1,1][x<0]` ** ESSENTIALLY IF ELSE STATEMENT **
-- XOR: `x = 0`, `x^= 1`. Note that XOR-ing a number `x` by the same number twice leaves you with `x`
+- Max Int: float("inf")
+- Min Int: -float("inf")
+- Get sign of int: [-1,1][x<0] ** ESSENTIALLY IF ELSE STATEMENT **
+- XOR: x = 0, x^= 1. Note that XOR-ing a number x by the same number twice leaves you with x
 
 ### Strings
 - Indexing:
-    - `mystring[0]` will give you the first letter
-    - `mystring[-1]` will give you the last element
+    - mystring[0] will give you the first letter
+    - mystring[-1] will give you the last element
 - Slicing: (see example 7)
-    - syntax - `mystring[first:last:step]` , note if step < 0 then step backwards
-        - `mystring[::] == mystring[0:len(mystring)-1]`
-        - `mystring[::-1]` reverses string
-    - ex. `"abcdefg"[:0:-2]` outputs "gec"
+    - syntax - mystring[first:last:step] , note if step < 0 then step backwards
+        - mystring[::] == mystring[0:len(mystring)-1]
+        - mystring[::-1] reverses string
+    - ex. "abcdefg"[:0:-2] outputs "gec"
 - Count number of instances of char:
-    - `"aaa".count('a') // output: 3`
+    - "aaa".count('a') // output: 3
 
 ### Data Structures
 
 #### HashMap:
-    - `dict()` is used liked a hashmap
-    - use `in` keyword to check if key is contained in dict
+    - dict() is used liked a hashmap
+    - use in keyword to check if key is contained in dict
 
 #### Array:
-    - Empty: `arr = []`
-    - Initialize w/ values: `arr = [1, 2, 3]`
-    - Initialize all zeroes: `arr = [0] * N # out = [0,0,0, ...]`
-    - Initialize w/ pattern: `arr = [1,2,3] * N # out = [1,2,3,1,2,3,...]`
+    - Empty: arr = []
+    - Initialize w/ values: arr = [1, 2, 3]
+    - Initialize all zeroes: arr = [0] * N # out = [0,0,0, ...]
+    - Initialize w/ pattern: arr = [1,2,3] * N # out = [1,2,3,1,2,3,...]
     - Check all values in array: all(x == 0 for x in arr)
     - Can zip two arrays together:
     
@@ -189,7 +189,7 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
 
 
 #### Heaps
-    - def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]`
+    - def: heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]
     - minHeap vs maxHeap
     - Basic Use:
     
