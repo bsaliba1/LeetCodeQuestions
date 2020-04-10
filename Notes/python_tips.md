@@ -14,15 +14,15 @@
     - string -> int: `int(mystring)`
     - int -> string: `str(myint)`
 - Command Line Args
-    ```
+    
     import sys
 
     print(sys.argv[1])
-    ```
+    
 - Initializing Multiple Vals: `a,b = [1,2]` // a = 1 and b = 2
 - Conversions:
     - Use data type names
-    ```
+    
     >> str(343)
     '343'
     >> float(343)
@@ -32,12 +32,12 @@
     >> bin(7)
     '0b111'
     >> ...
-    ```
+    
     - Get ascii rep of char:
-    ```
+    
     >> ord('a')
     97
-    ```
+    
 - Assertions:
     - basic syntax: `assert test, control`
 
@@ -76,24 +76,24 @@
     - Initialize w/ pattern: `arr = [1,2,3] * N # out = [1,2,3,1,2,3,...]`
     - Check all values in array: all(x == 0 for x in arr)
     - Can zip two arrays together:
-    ```
+    
     names = ['Bob', 'Sandy']
     nums = [1,2]
     mapped = set(zip(names, nums)) //{('Sandy', 2), ('Bob', 1)}
-    ```
+    
 
 #### Stack:
     - Use list as stack
-    ```
+    
     stack = [1,2,3]
     stack.append(4) # push
     stack.pop() # pop
     stack[-1] # peak
     if stack:  # false if empty
-    ```
+    
 
     - MinStack: (implementation)
-    ```
+    
     class MinStack:
 
     def __init__(self):
@@ -116,12 +116,12 @@
             return self.__stack[-1][1]
         else:
             return None
-    ```
+    
 
 #### Trees
 - Traversal
     - Post Order:
-        ```
+        
         def printPostorder(node: TreeNode):
             if node is None:
                 return
@@ -134,10 +134,10 @@
 
             # now deal with the node
             print(node.data)
-         ```
+         
 
      - In Order:
-        ```
+        
         def printInorder(node: TreeNode):
             if node is None:
                 return
@@ -150,10 +150,10 @@
 
             # now recur on right subtree
             printInorder(node->right);
-        ```
+        
 
       - Pre Order:
-        ```
+        
         def printPreorder(node: TreeNode):
             if node is None:
                 return
@@ -166,17 +166,17 @@
 
             # now recur on right subtree
             printPreorder(node->right);
-        ```
+        
 - Equivalent Trees
-```
+
     def checkSubTree(first: TreeNode, second: TreeNode):
         if first and second:
             return first.val == second.val and Solution().checkSubTree(first.left, second.right) and Solution().checkSubTree(first.right, second.left)
         return first == second
-```
+
 
 - Binary Search
-```
+
 # Returns index of target
 def binarySearch(nums: List[int], target: int) -> int:
     return binarySearchHelper(nums, target, 0, len(nums)-1)
@@ -186,20 +186,20 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
     if nums[mid] < target: return binarySearchHelper(nums,target, mid+1, end)
     if nums[mid] > target: return binarySearchHelper(nums,target, 0, mid)
     return mid
-```
+
 
 #### Heaps
     - def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]`
     - minHeap vs maxHeap
     - Basic Use:
-    ```
+    
     import heapq
     heap = [2,1,4]
     heapq.heapify(heap) // [1,2,4]
     heapq.heappush(heap, 3) // [1,2,4,3]
-    ```
+    
     - Heapsort:
-    ```
+    
     >>> def heapsort(iterable):
     ...     h = []
     ...     for value in iterable:
@@ -208,7 +208,7 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
     ...
     >>> heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    ```
+    
 
 
 
