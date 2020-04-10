@@ -65,11 +65,11 @@
 
 ### Data Structures
 
-#### HashMap:
+### HashMap:
     - dict() is used liked a hashmap
     - use in keyword to check if key is contained in dict
 
-#### Array:
+### Array:
     - Empty: arr = []
     - Initialize w/ values: arr = [1, 2, 3]
     - Initialize all zeroes: arr = [0] * N # out = [0,0,0, ...]
