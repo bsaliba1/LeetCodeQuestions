@@ -88,6 +88,7 @@
     stack[-1] # peak
     if stack:  # false if empty
     ```
+
     - MinStack: (implementation)
     ```
     class MinStack:
@@ -170,6 +171,7 @@
             return first.val == second.val and Solution().checkSubTree(first.left, second.right) and Solution().checkSubTree(first.right, second.left)
         return first == second
 ```
+
 - Binary Search
 ```
 # Returns index of target
@@ -182,6 +184,7 @@ def binarySearchHelper(nums: List[int], target: int, begin, end) -> int:
     if nums[mid] > target: return binarySearchHelper(nums,target, 0, mid)
     return mid
 ```
+
 #### Heaps
     - def: `heap[k] >= heap[2k+1] and heap[k] <= heap[2k+2]`
     - minHeap vs maxHeap
