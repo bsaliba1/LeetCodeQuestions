@@ -62,11 +62,36 @@
     - Use list as stack
     ```
     stack = [1,2,3]
+    stack.append(4) # push
     stack.pop() # pop
     stack[-1] # peak
-    len(stack)==0 # empty
+    if stack:  # false if empty
     ```
+    - MinStack: (implementation)
+    ```
+    class MinStack:
 
+    def __init__(self):
+        self.__stack = []
+
+    def push(self, x: int) -> None:
+        if self.__stack:
+            self.__stack.append((x, min(self.__stack[-1][1], x)))
+        else:
+            self.__stack.append((x, x))
+
+    def pop(self) -> None:
+        self.__stack.pop()
+
+    def top(self) -> int:
+        return self.__stack[-1][0]
+
+    def getMin(self) -> int:
+        if self.__stack:
+            return self.__stack[-1][1]
+        else:
+            return None
+    ```
 ### Math
 - Truncating: `//` operator is used for truncating divide
 - Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
