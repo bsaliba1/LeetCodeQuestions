@@ -48,7 +48,7 @@
 - Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
 - Max Int: `float("inf")`
 - Min Int: `-float("inf")`
-- Get sign of int: `[-1,1][x<0]` ** ESSENTIALLY IF ELSE STATEMENT
+- Get sign of int: `[-1,1][x<0]` ** ESSENTIALLY IF ELSE STATEMENT **
 - XOR: `x = 0`, `x^= 1`. Note that XOR-ing a number `x` by the same number twice leaves you with `x`
 
 ### Strings
@@ -61,7 +61,7 @@
         - `mystring[::-1]` reverses string
     - ex. `"abcdefg"[:0:-2]` outputs "gec"
 - Count number of instances of char:
-    - ``"aaa".count('a') // output: 3`
+    - `"aaa".count('a') // output: 3`
 
 ### Data Structures
 
