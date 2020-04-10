@@ -43,7 +43,6 @@
 
 ## Topics
 
-
 ### Math
 - Truncating: `//` operator is used for truncating divide
 - Reverse Int: Reverse an int with a loop to % 10 and /10 (see problem 7)
@@ -66,8 +65,10 @@
 
 ### Data Structures
 
-#### HashMap: `dict()` is used liked a hashmap
+#### HashMap:
+    - `dict()` is used liked a hashmap
     - use `in` keyword to check if key is contained in dict
+
 #### Array:
     - Empty: `arr = []`
     - Initialize w/ values: `arr = [1, 2, 3]`
