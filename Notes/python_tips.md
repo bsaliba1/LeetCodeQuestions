@@ -14,6 +14,8 @@
 - string -> int: `int(mystring)`
 - int -> string: `str(myint)`
 ### Command Line Args
+### Lambdas
+- Format: `lambda param1, param2, param3: body`
 ```
 import sys
 print(sys.argv[1])
@@ -82,7 +84,11 @@ print(sys.argv[1])
         nums = [1,2]
         mapped = set(zip(names, nums)) //{('Sandy', 2), ('Bob', 1)}
     ```
-
+- **Map**
+    - `list(map(func, list_to_map))`
+    - ex. `list(map(lambda x: 1 if x == 0 else x, [0,0,2,2])) # returns [1,1,2,2]`
+- **Reduce**
+- **Filter**
 #### Stack:
 - Use list as stack
     ```
