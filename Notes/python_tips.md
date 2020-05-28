@@ -14,12 +14,12 @@
 - string -> int: `int(mystring)`
 - int -> string: `str(myint)`
 ### Command Line Args
-### Lambdas
-- Format: `lambda param1, param2, param3: body`
 ```
 import sys
 print(sys.argv[1])
 ```
+### Lambdas
+- Format: `lambda param1, param2, param3: body`
 ### Initializing Multiple Vals:
 `a,b = [1,2] # a = 1 and b = 2`
 ### Conversions:
