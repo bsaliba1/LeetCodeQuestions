@@ -3,6 +3,7 @@
 ## Basics
 ### Data Types:
 - Ranges
+    - upper and lower bounds are inclusive unlike python
     - init: `x = 1..7`
     - iterate: 
     ```
@@ -22,16 +23,21 @@
 ### Declarations:
 ### Operators:
 - Ternary: `condition ? if_true : if_false` 
-- Exponent: 
+- Exponent: `2**3 # 8`
+- Chaining:
+```
+x = y = 2
+x *= y *= 2
+# x = 8, y = 4
+```
 ### Command Line Args
 ### Lambdas
 ### Initializing Multiple Vals:
-- 
+- different values: `x, y = 1, 2`
+- same values: `x = y = 1` 
 ### Conversions:
 ### Assertions:
-
 ## Topics
-
 ### Math
 ### Strings
 ### Data Structures
