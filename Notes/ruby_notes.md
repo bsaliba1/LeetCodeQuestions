@@ -1,6 +1,24 @@
 # Ruby Notes
 
 ## Basics
+### Comments
+- Single Line: `x = 7 # comment goes after hash`
+- Multi Line:
+    - Method 1 
+    ```
+    # First Line
+    # Second Line
+    # Third Line
+    ```
+    - Method 2
+    ```
+    =begin
+    First Line
+    Second Line
+    Third Line
+    =end
+    ```
+
 ### Data Types:
 - Ranges
     - upper and lower bounds are inclusive unlike python
@@ -40,8 +58,26 @@ x *= y *= 2
 ## Topics
 ### Math
 ### Strings
+- Split string into chars: `"hello".split('') # ['h','e','l','l','o']`
+- Combine chars into string: `['h','e','l','l','o'].join('') # "hello"`
+- Count instances of char a char in a string `"hello".count('l') # 2` 
 ### Data Structures
-
+#### Bit Vector
+- Not built in data structure just a way of using an int
+- Get right most bit val: 
+```
+# Note this is assuming it is a base 2 bit vector
+# If not base 2 then use bit_vector % n, where n is the base
+bit_vector = 7
+right_most = bit_vector % 2
+```
+- Get all but right most bits:
+```
+# Note this is assuming it is a base 2 bit vector
+# If not base 2 then use bit_vector / n, where n is the base
+bit_vector = 7
+remainder = bit_vector/2
+```
 #### HashMap:
 #### Array:
 - init with zeroes: `arr = [0]*length #length is size you want`
