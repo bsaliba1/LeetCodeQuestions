@@ -1,5 +1,5 @@
 # LeetCodeQuestions
-A repo of all my solutions to leetcode questions and my notes on how I solved them.
+A repo of all my solutions to leetcode questions and my notes on how I solved them
 
 ## Game Plan
 
