@@ -1,5 +1,5 @@
 # LeetCodeQuestions
-A repo of all my solutions to leetcode questions and my notes on how I solved them
+A repo of all my solutions to leetcode questions and my notes on how I solved them.
 
 ## Game Plan
 
@@ -25,7 +25,7 @@ A repo of all my solutions to leetcode questions and my notes on how I solved th
 ## Organization
     
 ### Problems
-This is the directory contains subdirectories for all of the algorithm topics on leetcode. Within the subdirectories the problems are named according to their number on leetcode (ex. problem 99 => 99.py)
+This is the directory contains subdirectories for all of the algorithm topics on leetcode. Within the subdirectories the problems are named according to their number on leetcode (ex. problem 99 => 99.py).
 
 ### Notes
 This directory is my personal little space for keeping notes on important things I learned.
